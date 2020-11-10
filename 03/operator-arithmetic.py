@@ -9,7 +9,7 @@ print(t, type(t))
 a, b =divmod(15, 2)
 print(a,b)
 
-
+#산술연산
 print(2 ** 3 ** 4)
 print((2 ** 3) ** 4)
 print(2 ** (3 ** 4))
