@@ -100,16 +100,54 @@ s='Hello Python Python Python'
 print(s.replace('Python', 'Java'))
 
 #분리
-s = 'one:two:three'
+s = 'one:two:three:four'
 r = s.split(':')
 print(r, type(r))
 
+r = s.split(':', 2)
+print(r)
+r = s.rsplit(':', 2)
+print(r)
+
+Lines = """1st Line
+2nd Line
+3rd line
+4th Line
+"""
+r = Lines.split('\n')
+print(r)
+
+r = Lines.splitlines()
+print(r)
+
+#결합
+s = '&'.join(r)
+print(s)
+
+#판별
+print('1234'.isdigit())
+print('abc'.isalpha())
+print('1234'.isalpha())
+print('abced'.islower())
+print('ABCDE'.isupper())
 
 
+print('================문자열 연산:포맷팅==================')
+#포맷팅
+name = "둘리"
+age = 10
+f1 = "name : " + name + ", age : " + str(10)
+print(f1)
+
+f2 = "name : {}, age : {}"
+print(f2.format(name, age))
 
 
+f3 = "name : {1}, age : {0}"
+print(f3.format(age, name))
 
-
+f4 = f'name : {name}, age : {age}'
+print(f4)
 
 
 
