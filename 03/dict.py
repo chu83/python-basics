@@ -90,12 +90,12 @@ print('=========== 순회 ===========')
 d7 = {'c':3, 'a':1, 'b':2}
 
 for key in d7:
-    print(key, end ='\t')
+    print(key, end ='')
 else:
     print('\n')
 
 for key in d7.keys():
-    print(key, end='\t')
+    print(key, end='')
 else:
     print('')
 
