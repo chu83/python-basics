@@ -1,4 +1,4 @@
-# test
+# test (HW)
 
 try:
     from point import Point
@@ -26,3 +26,4 @@ m = Multiply()
 out = m.forward(10, 20)
 print(out)      # 200
 print(m)        # 'multiply (x=10, y=20)'
+
